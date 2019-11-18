@@ -4,6 +4,7 @@
 // Version     :
 // Copyright   : Your copyright notice
 // Description : 练习7.41
+// 重点：理解委托构造函数执行顺序
 //============================================================================
 
 #include <iostream>
