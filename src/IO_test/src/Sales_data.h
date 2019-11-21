@@ -1,8 +1,8 @@
 /*
  * Sales_data.h
  *
- *  Created on: 2019Äê10ÔÂ31ÈÕ
- *      Author: Ê¯Íş£¨Sesen£©
+ *  Created on: 2019å¹´10æœˆ31æ—¥
+ *      Author: çŸ³å¨ï¼ˆSesenï¼‰
  */
 
 #ifndef SALES_DATA_H_
@@ -14,13 +14,13 @@ using namespace std;
 
 class Sales_data
 {
-// ÎªSales_dataµÄ·Ç³ÉÔ±º¯Êı×öÓÑÔªÉùÃ÷
+// ä¸ºSales_dataçš„éæˆå‘˜å‡½æ•°åšå‹å…ƒå£°æ˜
 friend Sales_data add(const Sales_data&, const Sales_data&);
 friend istream &read(istream&, Sales_data&);
 friend ostream &print(ostream&,const Sales_data&);
-//·ÃÎÊËµÃ÷·û
+//è®¿é—®è¯´æ˜ç¬¦
 public:
-	//¹¹Ôìº¯Êı
+	//æ„é€ å‡½æ•°
 	Sales_data() = default;
 	Sales_data(const string &s): bookno(s) {};
 	Sales_data(const string &s, unsigned n, double p):
@@ -36,7 +36,7 @@ public:
     string isbn() const  {return bookno;}
 
 
-//Ë½ÓĞ·ÃÎÊËµÃ÷·û£¬ÀàÄÚÊı¾İ³ÉÔ±ºÍÊµÏÖ²¿·Öº¯Êı
+//ç§æœ‰è®¿é—®è¯´æ˜ç¬¦ï¼Œç±»å†…æ•°æ®æˆå‘˜å’Œå®ç°éƒ¨åˆ†å‡½æ•°
 private:
 	double avg_price() const;
 
@@ -45,7 +45,7 @@ private:
     double total_money = 0.0;
 };
 
-//Sales_data½Ó¿ÚµÄ·Ç³ÉÔ±º¯ÊıÉùÃ÷£¬¶¨ÒåÔÚutils.cppÖĞ£¬ÒòÉùÃ÷ÁËÓÑÔªº¯Êı£¬ËùÒÔ¿ÉÒÔÊ¹ÓÃprivate³ÉÔ±
+//Sales_dataæ¥å£çš„éæˆå‘˜å‡½æ•°å£°æ˜ï¼Œå®šä¹‰åœ¨utils.cppä¸­ï¼Œå› å£°æ˜äº†å‹å…ƒå‡½æ•°ï¼Œæ‰€ä»¥å¯ä»¥ä½¿ç”¨privateæˆå‘˜
 Sales_data add(const Sales_data&, const Sales_data&);
 istream &read(istream&, Sales_data&);
 ostream &print(ostream&,const Sales_data&);
@@ -56,6 +56,5 @@ double Sales_data::avg_price() const
 {
 	return units_sold ? total_money / units_sold : 0;
 }
-
 
 #endif /* SALES_DATA_H_ */
