@@ -1,8 +1,8 @@
 /*
  * utils.cpp
  *
- *  Created on: 2019Äê10ÔÂ31ÈÕ
- *      Author: Ê¯Íş£¨Sesen£©
+ *  Created on: 2019å¹´10æœˆ31æ—¥
+ *      Author: çŸ³å¨ï¼ˆSesenï¼‰
  */
 
 #include <iostream>
@@ -28,10 +28,11 @@ istream &read(istream &is, Sales_data &item)
 
 ostream &print(ostream &os, const Sales_data &item)
 {
-    os << "ÊéÃû£º " << item.isbn() << " ÊÛ³öÊıÁ¿£º " << item.units_sold <<
-    		"  ÏúÊÛ×Ü¶î£º " << item.total_money << " ÊÛ³öµ¥¼Û:" << item.avg_price();
+    os << "ä¹¦åï¼š " << item.isbn() << " å”®å‡ºæ•°é‡ï¼š " << item.units_sold <<
+    		"  é”€å”®æ€»é¢ï¼š " << item.total_money << " å”®å‡ºå•ä»·:" << item.avg_price();
     return os;
 }
+
 Sales_data::Sales_data(istream &is)
 {
     read(is, *this);
