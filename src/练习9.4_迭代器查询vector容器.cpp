@@ -3,7 +3,7 @@
 // Author      : Seseneee
 // Version     :
 // Copyright   : Your copyright notice
-// Description : 练习9.4  使用迭代器，在vector数组中查找target是否存在。
+// Description : 练习9.4  使用迭代器，在vector数组中查找target是否存在。返回bool值。
 //============================================================================
 
 #include <iostream>
