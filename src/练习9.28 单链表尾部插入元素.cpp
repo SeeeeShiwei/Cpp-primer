@@ -48,8 +48,8 @@ void process(forward_list<string> &list_str, string strA, string strB)
 int main()
 {
 
-	forward_list<string> list_str1 = {"AA","CC","DD","AA"};
-	forward_list<string> list_str2 = {"CC","DD"};
+    forward_list<string> list_str1 = {"AA","CC","DD","AA"};
+    forward_list<string> list_str2 = {"CC","DD"};
     string stringA = "AA";
     string stringB = "BB";
 
