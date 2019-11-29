@@ -41,4 +41,15 @@ ConstRef::ConstRef(int ii) : i(ii), ci(ii),ri(i) { }
 （1）不要保存end返回的迭代器。如果在一个循环中插入/删除deque、string或vector中的元素，不要缓存end返回的迭代器，会失效。
 （2）必须在每次插入操作后，重新调用end（），而不能在循环开始前保存end返回的迭代器。
 
+9.4 Vector对象是如何增长的
+（1）容器大小管理操作
+     shrink_to_fit()只适用于vector，string和deque
+     capacity（）和reserve（）只适用于vector和string
+     c.shrink_to_fit()  //将capacity（）容量减少为与size()一样大小
+     c.capacity()  //不重新分配内存空间， c可以保存多少元素
+     c.reserve(n) // 分配至少能容纳n个元素的内存空间
+ （2）不能使用reserve和resize来减少容器预留的内存空间
+      可以使用shrink_to_fit退回不需要的空间
+     
+
 
