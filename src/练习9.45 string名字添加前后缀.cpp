@@ -26,7 +26,8 @@ void combine_pre_suffix(string &name, const string prefix, const string suffix)
     {
     	iter start = name.begin();
         name.insert(start, prefix.cbegin(), prefix.cend());
-//        iter end = name.end();
+//      iter end = name.end();
+// 	name.insert(end, suffix.cbegin(), suffix.cend());
         name.append(suffix);
     }
 
